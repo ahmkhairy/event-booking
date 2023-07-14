@@ -1,0 +1,53 @@
+.payment-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1 {
+    margin-bottom: 30px;
+    margin: 2em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  

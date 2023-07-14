@@ -1,0 +1,185 @@
+.events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.event-card {
+    flex: 0 1 calc(25% - 1em);
+    border: 1px solid #ccc;
+    margin: 0.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.event-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.event-card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 1em;
+    max-height: 300px;
+}
+
+
+.event-card h3 {
+    font-size: 1.5em;
+}
+
+.event-card h1 {
+    font-size: 1em;
+    margin-left: auto;
+}
+
+.event-card p {
+    margin: 2em 0 0 0;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.event-card .type {
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    margin: 1em 0 0 0;
+    padding-top: 0;
+}
+
+.event-card .tickets {
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+.event-card .price {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid rgb(12, 184, 49);
+    margin-top: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40%;
+}
+
+.event-card .price:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4CAF50;
+}
+
+.event-card .delete {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(236, 8, 8);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid rgb(250, 9, 9);
+    margin-top: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10%;
+}
+
+.event-card .delete:hover {
+    background-color: rgb(247, 4, 4);
+    color: rgb(255, 254, 254);
+    border: 1px solid #080808;
+}
+
+.event-card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.4em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+
+.search-bar-wrapper {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-bar {
+    max-width: 200px;
+}
+
+.create-event-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #ebf5f5;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    max-width: 100px;
+    border: 1px solid rgb(8, 8, 8);
+}
+
+.create-event-button:hover {
+    background-color: #abeeee;
+}
+
+.disabled-button {
+    background-color: red !important;
+    cursor: auto !important;
+    border: 1px solid rgb(0, 7, 2) !important;
+  }
+  
+  .disabled-button:hover {
+    background-color: red !important;
+    color: rgb(252, 249, 249) !important;
+  }
+  
+  

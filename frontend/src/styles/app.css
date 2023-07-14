@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+#app.signin {
+    background-image: url('@/images/signin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#app.signup {
+    background-image: url('@/images/signup.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#app.create-event {
+    background-image: url('@/images/createEvent.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section:first-child {
+    justify-content: flex-start;
+}
+
+.header-section:last-child {
+    justify-content: flex-end;
+}
+
+
+.title {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.profile-menu {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.profile-menu.active {
+    display: block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #4b4646;
+    color: white;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+}
+
+button.nav-link {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
